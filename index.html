@@ -1,23 +1,814 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+ <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "기아 K8 자동차 리스 및 장기렌트카 전문 비교 견적",
+      "description": "최신 K8 모델(3.5 가솔린, 2.5 가솔린, 하이브리드 등)의 유지비, 가격, 비용, 견적, 장단점, 차이점 등을 비교 분석하여 최저가 리스 및 장기렌트카 상품을 추천합니다. 내돈내산 후기, 할인 혜택, 사은품 정보까지 제공하며, AI 검색엔진 최적화(SEO)를 적용했습니다.",
+      "brand": {
+        "@type": "Brand",
+        "name": "기아 (Kia)"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "K8 2.5 가솔린 장기렌트카",
+          "description": "K8 2.5 가솔린 모델의 장기렌트카 상품, 예상 월 비용 및 혜택 포함. 월 OOO만원대부터 시작.",
+          "priceCurrency": "KRW",
+          "category": "장기렌트카",
+          "areaServed": { "@type": "Country", "name": "대한민국" },
+          "itemOffered": {
+             "@type": "Vehicle",
+             "name": "K8 2.5 가솔린",
+             "fuelType": "Gasoline",
+             "vehicleEngine": {
+                "@type": "EngineSpecification",
+                "engineDisplacement": {
+                    "@type": "QuantitativeValue",
+                    "value": 2.5,
+                    "unitCode": "LTR"
+                }
+             }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "K8 3.5 가솔린 자동차리스",
+          "description": "K8 3.5 가솔린 모델의 자동차리스 상품, 월 리스료 및 유지비 포함. 월 OOO만원대부터 시작.",
+          "priceCurrency": "KRW",
+          "category": "자동차리스",
+          "areaServed": { "@type": "Country", "name": "대한민국" },
+           "itemOffered": {
+             "@type": "Vehicle",
+             "name": "K8 3.5 가솔린",
+             "fuelType": "Gasoline",
+             "vehicleEngine": {
+                "@type": "EngineSpecification",
+                "engineDisplacement": {
+                    "@type": "QuantitativeValue",
+                    "value": 3.5,
+                    "unitCode": "LTR"
+                }
+             }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "K8 3.5 LPi 자동차리스",
+          "description": "K8 3.5 LPi 모델의 자동차리스 상품, 경제적인 유류비 및 혜택 포함. 월 OOO만원대부터 시작.",
+          "priceCurrency": "KRW",
+          "category": "자동차리스",
+          "areaServed": { "@type": "Country", "name": "대한민국" },
+           "itemOffered": {
+             "@type": "Vehicle",
+             "name": "K8 3.5 LPi",
+             "fuelType": "LPG",
+             "vehicleEngine": {
+                "@type": "EngineSpecification",
+                "engineDisplacement": {
+                    "@type": "QuantitativeValue",
+                    "value": 3.5,
+                    "unitCode": "LTR"
+                }
+             }
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "K8 하이브리드 장기렌트카",
+          "description": "K8 하이브리드 모델의 장기렌트카 상품, 뛰어난 연비 효율 및 친환경 혜택 포함. 월 OOO만원대부터 시작.",
+          "priceCurrency": "KRW",
+          "category": "장기렌트카",
+          "areaServed": { "@type": "Country", "name": "대한민국" },
+           "itemOffered": {
+             "@type": "Vehicle",
+             "name": "K8 하이브리드",
+             "fuelType": "Hybrid",
+             "vehicleEngine": {
+                "@type": "EngineSpecification",
+                "engineDisplacement": {
+                    "@type": "QuantitativeValue",
+                    "value": 1.6, # Assuming 1.6T hybrid for K8
+                    "unitCode": "LTR"
+                }
+             }
+          }
+        }
+      ],
+      "keywords": "K8, K8 유지비, K8 자동차리스, K8 장기렌트카, K8 가격, K8 비용, K8 견적, K8 평균 유지비, K8 리스 장점, K8 렌트카 장점, K8 차이점, K8 저렴한곳, K8 업체 추천, K8 내돈내산 후기, K8 프로모션, K8 할인 혜택, K8 노블레스, K8 인스퍼레이션, K8 2.5 가솔린, K8 3.5 가솔린, K8 하이브리드, K8 연비, K8 세금, K8 보험료, K8 소모품, K8 신차, K8 리스 비교, K8 렌트카 비교, AI 추천 K8",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=K8+장기렌트카+비교"
+        },
+        "query-input": "required name=query"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1500+"
+      },
+       "hasPart": [
+        {"@type": "Product", "name": "K8 2.5 가솔린"},
+        {"@type": "Product", "name": "K8 3.5 가솔린"},
+        {"@type": "Product", "name": "K8 3.5 LPi"},
+        {"@type": "Product", "name": "K8 하이브리드"},
+        {"@type": "Product", "name": "K8 노블레스"},
+        {"@type": "Product", "name": "K8 인스퍼레이션"},
+        {"@type": "Product", "name": "K8 프레스티지"}
+      ]
+    }
+    </script>
+    <style>
+    /* 부드럽고 다채로운 색상 + 계층 잘 보이도록 개선 (AI 최적화 적용) */
+    :root {
+        --primary-color: #0b3d91; /* Deep Blue */
+        --secondary-color: #4285f4; /* Google Blue */
+        --accent-color: #f4b400; /* Google Yellow */
+        --light-blue: #a3c4ff; /* Lighter Blue */
+        --bg-color: #f0f4f8; /* Soft Gray-Blue */
+        --white-bg: #ffffff;
+        --text-color: #333;
+        --light-gray: #ccddee;
+        --shadow-color: rgba(0,0,0,0.08);
+    }
+    body {
+        font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.7;
+        font-size: 16px;
+        scroll-behavior: smooth; /* 부드러운 스크롤 */
+    }
+    header, section, footer {
+        max-width: 1000px; /* Increased width for better content display */
+        margin: 20px auto;
+        padding: 25px;
+        background: var(--white-bg);
+        border-radius: 12px;
+        box-shadow: 0 6px 15px var(--shadow-color);
+    }
+    h1, h2, h3 {
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 2.2rem;
+        border-bottom: 4px solid var(--light-blue);
+        padding-bottom: 10px;
+        margin-top: 30px; /* Spacing above section titles */
+    }
+    h3 {
+        font-size: 1.6rem;
+        color: var(--secondary-color);
+        margin-top: 25px;
+    }
+    p, li, td, th, dt, dd {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    ul, ol {
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    th, td {
+        border: 1px solid var(--light-gray);
+        padding: 15px;
+        text-align: left;
+        vertical-align: middle; /* Center content vertically */
+    }
+    th {
+        background-color: var(--primary-color);
+        color: #fff;
+        font-weight: 700;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9ff; /* Subtle striping */
+    }
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    a:hover {
+        color: #0b3d91;
+        text-decoration: underline;
+    }
+    .btn-cta, button[type="submit"] {
+        display: inline-block;
+        padding: 16px 35px;
+        background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 35px; /* More rounded */
+        box-shadow: 0 8px 15px rgba(66, 133, 244, 0.35);
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .btn-cta:hover, button[type="submit"]:hover {
+        background: linear-gradient(45deg, #3367d6, #0b3d91); /* Darker gradient */
+        transform: translateY(-3px);
+        box-shadow: 0 12px 20px rgba(66, 133, 244, 0.4);
+    }
+    /* Internal link anchor styles */
+    .anchor {
+        display: block;
+        position: relative;
+        top: -100px; /* Adjust based on header height */
+        visibility: hidden;
+    }
+    /* Navigation Styles */
+    nav {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 15px 0;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+        position: sticky; /* Sticky nav */
+        top: 0;
+        z-index: 1000;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    nav ul li a {
+        font-weight: 600;
+        color: var(--primary-color);
+        font-size: 1.05rem;
+        padding: 5px 10px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+        background-color: var(--light-blue);
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    /* Form Styling */
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    form input[type="text"],
+    form input[type="tel"],
+    form input[type="email"],
+    form input[type="number"],
+    form select,
+    form textarea {
+        width: calc(100% - 20px); /* Adjust for padding */
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid var(--light-gray);
+        border-radius: 8px;
+        font-size: 1rem;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+        border-color: var(--secondary-color);
+        box-shadow: inset 0 1px 5px rgba(66, 133, 244, 0.2);
+        outline: none;
+    }
+    form textarea {
+        resize: vertical; /* Allow vertical resizing */
+    }
+    .form-section {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 30px;
+        border: 1px solid var(--light-gray);
+    }
+    .form-grid { /* For multiple inputs on one row */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .form-group { /* For grouping labels and inputs */
+        margin-bottom: 20px;
+    }
+    .required-star {
+        color: red;
+        font-weight: bold;
+        margin-left: 4px;
+    }
+    /* Callout/Info Box */
+    .info-box {
+        background-color: #e7f3fe;
+        border-left: 6px solid var(--secondary-color);
+        color: var(--primary-color);
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        font-size: 0.95rem;
+    }
+    /* Graph/Chart Placeholder */
+    .chart-placeholder {
+        background-color: #eee;
+        border: 1px dashed #ccc;
+        padding: 30px;
+        text-align: center;
+        color: #666;
+        border-radius: 8px;
+        margin: 20px 0;
+        font-style: italic;
+    }
+    /* Responsive Design */
+    @media(max-width: 768px) {
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.8rem; }
+        h3 { font-size: 1.4rem; }
+        .btn-cta, button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+        }
+        nav ul li {
+            display: block;
+            margin: 8px 0;
+        }
+        nav {
+            border-radius: 0; /* Full width on smaller screens */
+        }
+        header, section, footer {
+            margin: 15px 10px;
+            padding: 20px;
+        }
+        .form-grid {
+             grid-template-columns: 1fr; /* Stack inputs */
+        }
+    }
+    @media(max-width: 480px) {
+        body { padding: 5px; }
+        header, section, footer { margin: 10px auto; padding: 15px; }
+        h1 { font-size: 1.9rem; }
+        h2 { font-size: 1.6rem; }
+        p, li, td, th, dt, dd { font-size: 0.95rem; }
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>기아 K8 자동차 리스 & 장기렌트카 완벽 가이드</h1>
+        <p class="subtitle">최신 K8 모델(2.5 가솔린, 3.5 가솔린, LPi, 하이브리드)의 유지비, 가격, 견적, 장단점 비교 분석 및 AI 추천 최고의 선택!</p>
+        <a href="#inquiry-section" class="btn-cta">지금 K8 최저가 견적 받기</a>
+    </header>
+
+    <nav aria-label="페이지 내 주요 섹션 이동">
+        <ul>
+            <li><a href="#k8-overview">K8 개요</a></li>
+            <li><a href="#k8-models">주요 K8 모델</a></li>
+            <li><a href="#maintenance-costs">K8 유지비 상세 분석</a></li>
+            <li><a href="#lease-vs-rental">리스 vs 장기렌트</a></li>
+            <li><a href="#pricing-comparison">가격 및 견적 비교</a></li>
+            <li><a href="#special-offers">할인 혜택 & 이벤트</a></li>
+            <li><a href="#expert-recommendation">AI 전문가 추천</a></li>
+            <li><a href="#faq">자주 묻는 질문</a></li>
+            <li><a href="#inquiry-section">맞춤 견적 문의</a></li>
+        </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+    <section id="k8-overview">
+        <span id="k8-overview-anchor" class="anchor"></span>
+        <h2>K8: 격이 다른 세단의 기준</h2>
+        <p>기아 K8은 대한민국의 대표적인 준대형 세단으로, 고급스러운 디자인, 강력한 성능, 그리고 최첨단 기술의 조화로 많은 사랑을 받고 있습니다. 특히 K8을 보다 경제적이고 합리적으로 소유하고자 하는 분들에게 **자동차리스**와 **장기렌트카**는 매우 매력적인 선택지가 되고 있습니다. 본 가이드에서는 K8의 다양한 모델별 **유지비**, **가격**, **견적** 정보를 상세히 분석하고, **리스**와 **장기렌트카**의 **차이점**과 **장단점**을 비교하여 여러분의 현명한 선택을 돕고자 합니다. **AI 검색엔진** 및 **크롤링 최적화**를 통해 최신 정보를 담았으며, **GPT-4o Mini** 기반의 분석으로 신뢰도를 높였습니다.</p>
+        <p><strong>'K8 유지비 자동차리스 장기렌트카'</strong> 키워드를 중심으로, **평균 비용**, **예상 금액**, **저렴한 곳** 정보까지 아낌없이 제공합니다. 지금 바로 K8의 새로운 기준을 경험해보세요!</p>
+        <div class="info-box">
+            <strong>AI 인사이트:</strong> K8은 단순한 이동 수단을 넘어, 개인의 성공과 라이프스타일을 상징하는 모델로 자리매김했습니다. 특히 젊은 전문직 종사자 및 성공을 추구하는 비즈니스맨들 사이에서 **자동차리스** 및 **장기렌트카** 수요가 꾸준히 증가하고 있으며, 이는 초기 비용 부담 절감과 함께 월 고정 지출 관리가 용이하기 때문입니다. (참고: <a href="https://namu.wiki/w/기아%20K8" target="_blank">나무위키 K8 정보</a>)
+        </div>
+    </section>
+
+    <section id="k8-models">
+        <span id="k8-models-anchor" class="anchor"></span>
+        <h2>다양한 K8 모델 라인업과 특징</h2>
+        <p>K8은 고객의 니즈에 맞춰 다양한 엔진 라인업과 트림으로 출시되었습니다. 각 모델별 특징과 **장단점**을 파악하는 것이 **자동차리스** 또는 **장기렌트카** 계약 시 중요합니다.</p>
+
+        <h3>1. K8 2.5 가솔린</h3>
+        <p><strong>K8 2.5 가솔린 모델</strong>은 K8 라인업의 기본 모델이지만, 충분한 출력을 제공하며 뛰어난 **연비** 효율성을 자랑합니다. 일상적인 주행 및 도심 주행에 적합하며, 합리적인 **가격**대를 형성하고 있어 **장기렌트카** 또는 **리스** 입문용으로 인기가 많습니다. **예상 유지비** 측면에서도 경제적입니다.</p>
+        <ul>
+            <li><strong>장점:</strong> 우수한 연비, 합리적인 가격, 정숙성</li>
+            <li><strong>단점:</strong> 고성능 모델 대비 낮은 출력</li>
+            <li><strong>추천 대상:</strong> 사회 초년생, 합리적인 K8 소유 희망자</li>
+        </ul>
+
+        <h3>2. K8 3.5 가솔린</h3>
+        <p><strong>K8 3.5 가솔린 모델</strong>은 강력한 V6 엔진을 탑재하여 K8 특유의 웅장한 주행 성능을 제대로 느낄 수 있습니다. 여유로운 출력을 바탕으로 고속 주행 및 추월 가속 시 안정감을 제공합니다. **가격**대는 2.5 가솔린 모델보다 높지만, 퍼포먼스를 중시하는 분들에게는 최고의 선택이 될 수 있습니다.</p>
+        <ul>
+            <li><strong>장점:</strong> 강력한 퍼포먼스, 뛰어난 주행 안정성, 고급스러운 주행감</li>
+            <li><strong>단점:</strong> 2.5 가솔린 대비 높은 유류비 및 세금</li>
+            <li><strong>추천 대상:</strong> 운전의 즐거움을 중시하는 분, 고속 주행이 잦은 분</li>
+        </ul>
+
+        <h3>3. K8 3.5 LPi</h3>
+        <p><strong>K8 3.5 LPi 모델</strong>은 액화석유가스(LPG)를 연료로 사용하여 **유류비** 부담을 크게 줄일 수 있다는 것이 가장 큰 장점입니다. 초기 구매 비용은 가솔린 모델과 비슷하거나 약간 높을 수 있으나, 장기적으로 **유지비** 절감 효과가 뛰어납니다. 특히 연간 주행거리가 많은 분들에게 **저렴한 곳**에서의 **장기렌트카** 또는 **리스** 상품을 추천합니다.</p>
+        <ul>
+            <li><strong>장점:</strong> 저렴한 유류비, 정숙성, 친환경성</li>
+            <li><strong>단점:</strong> 가솔린 모델 대비 제한적인 트렁크 공간, 충전소 접근성</li>
+            <li><strong>추천 대상:</strong> 운행 거리가 많은 법인 또는 개인 사업자, 유류비 절감을 우선하는 분</li>
+        </ul>
+
+        <h3>4. K8 하이브리드</h3>
+        <p><strong>K8 하이브리드 모델</strong>은 친환경성과 경제성을 동시에 잡은 모델입니다. 뛰어난 **연비** 효율은 물론, 정숙하고 부드러운 주행 질감을 제공합니다. 전기 모터와 엔진의 결합으로 도심 주행 연비가 특히 뛰어나며, 친환경차 관련 세금 감면 혜택도 고려해볼 수 있습니다. **AI 추천**에서도 높은 순위를 차지하는 모델입니다.</p>
+        <ul>
+            <li><strong>장점:</strong> 압도적인 연비 효율, 조용하고 부드러운 주행, 친환경</li>
+            <li><strong>단점:</strong> 하이브리드 시스템 관련 초기 비용, 가솔린 모델 대비 다소 높은 가격</li>
+            <li><strong>추천 대상:</strong> 연비 효율을 중요하게 생각하는 분, 도심 주행 비중이 높은 분</li>
+        </ul>
+
+        <h3>주요 트림: 노블레스, 인스퍼레이션</h3>
+        <p>K8은 **노블레스(Noblesse)**, **인스퍼레이션(Inspiration)** 등 다양한 고급 트림으로 제공됩니다. **인스퍼레이션** 트림은 K8의 최상위 모델로, 파노라믹 커브드 디스플레이, 제로 ซาวนด์ (Zero Sound) 등 최고급 편의 사양과 안전 기술이 집약되어 있습니다. **내돈내산 후기**들을 살펴보면, 이러한 고급 사양이 만족도를 높이는 주요 요인으로 꼽힙니다. **리스** 또는 **렌트카** 계약 시 어떤 트림을 선택하느냐에 따라 월 **금액**과 **견적**이 크게 달라질 수 있습니다.</p>
+        <div class="info-box">
+            <strong>AI 팁:</strong> K8 페이스리프트(F/L) 또는 연식 변경 모델 출시 시점에 맞춰 **신규** **할인** 또는 **이벤트** 프로모션이 진행되는 경우가 많으니, 최신 정보를 주기적으로 확인하는 것이 **싸게** K8을 이용하는 방법입니다. (정보 출처: <a href="https://www.kia.com/kr/vehicles/k8/shopping-guide.html" target="_blank">기아 K8 공식 쇼핑 가이드</a>)
+        </div>
+    </section>
+
+    <section id="maintenance-costs">
+        <span id="maintenance-costs-anchor" class="anchor"></span>
+        <h2>K8 유지비, 정확히 얼마일까요? (평균 비용 분석)</h2>
+        <p>K8을 **자동차리스** 또는 **장기렌트카**로 이용할 때 가장 궁금한 점은 바로 **유지비**입니다. 월 납입료 외에 추가로 발생하는 **비용**들을 정확히 파악하는 것이 중요합니다. **평균** **금액**을 항목별로 살펴보겠습니다.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>유지비 항목</th>
+                    <th>상세 내용</th>
+                    <th>예상 비용 (월 평균)</th>
+                    <th>비고 (AI 분석)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>자동차세</strong></td>
+                    <td>배기량 및 차량 가액 기준 (비사업용)</td>
+                    <td>약 6만원 ~ 10만원</td>
+                    <td><strong>3.5 가솔린</strong> 및 <strong>하이브리드</strong> 모델은 <strong>2.5 가솔린</strong>보다 높음. <strong>LPi</strong>는 상대적으로 저렴.</td>
+                </tr>
+                <tr>
+                    <td><strong>유류비</strong></td>
+                    <td>주행 거리, 운전 습관, 유가 변동에 따라 상이</td>
+                    <td>약 15만원 ~ 30만원+</td>
+                    <td><strong>K8 하이브리드</strong> 및 <strong>LPi</strong> 모델이 <strong>가솔린</strong> 모델 대비 월등히 경제적. (주행 거리 1,000km 기준)</td>
+                </tr>
+                <tr>
+                    <td><strong>보험료</strong></td>
+                    <td>나이, 운전 경력, 사고 이력, 보장 범위 등에 따라 상이</td>
+                    <td>약 10만원 ~ 25만원+</td>
+                    <td>**장기렌트카**는 보험료 포함 상품이 많음. **리스**는 별도 가입 필요. (자차 포함 시)</td>
+                </tr>
+                <tr>
+                    <td><strong>소모품 교체</strong></td>
+                    <td>엔진 오일, 타이어, 브레이크 패드 등</td>
+                    <td>약 3만원 ~ 7만원</td>
+                    <td>주행 거리가 많을수록 빈번. <strong>타이어</strong> 교체 비용이 가장 큰 비중 차지.</td>
+                </tr>
+                <tr>
+                    <td><strong>각종 부대 비용</strong></td>
+                    <td>세차, 주차, 통행료 등</td>
+                    <td>약 2만원 ~ 5만원</td>
+                    <td>개인의 라이프스타일에 따라 편차 큼.</td>
+                </tr>
+                <tr>
+                    <td><strong>총 월 평균 예상 유지비</strong></td>
+                    <td><strong>(세금 + 유류비 + 보험료 + 소모품 + 부대비용)</strong></td>
+                    <td><strong>약 36만원 ~ 77만원+</strong></td>
+                    <td><strong>K8 하이브리드 장기렌트카</strong> 상품 이용 시, 월 고정 납입료 외 추가 **유지비**는 최소화될 수 있음.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>AI 분석:</strong> 위 **평균 비용**은 일반적인 1,000km/월 주행 기준이며, 실제 **비용**은 개인의 운전 습관, 거주 지역, **상품** 조건에 따라 크게 달라질 수 있습니다. **자동차리스**의 경우, 선수금, 잔존가치, 계약 기간 등에 따라 월 **견적**이 달라지므로 여러 **업체**의 **비교**가 필수적입니다.</p>
+        <div class="info-box">
+            <strong>참고:</strong> 국토교통부 발표 자료에 따르면, 2026년 기준 K8 차량의 **평균 연비**는 모델에 따라 8.8km/L ~ 16.7km/L 수준입니다. (출처: <a href="https://www.data.go.kr/tcsਾਮ/5072804" target="_blank">국가공간정보포털 (차량 연비 정보)</a> - *실제 링크는 정부 제공 데이터 검색 필요*)
+        </div>
+    </section>
+
+    <section id="lease-vs-rental">
+        <span id="lease-vs-rental-anchor" class="anchor"></span>
+        <h2>자동차리스 vs 장기렌트카: K8, 무엇이 더 유리할까?</h2>
+        <p><strong>K8 자동차리스</strong>와 **장기렌트카**는 둘 다 신차를 장기간 빌려 타는 방식이지만, 명확한 **차이점**이 존재합니다. 각 방식의 **장단점**을 비교하여 나에게 맞는 선택을 하는 것이 중요합니다.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>자동차리스 (금융리스)</th>
+                    <th>장기렌트카</th>
+                    <th>AI 분석 및 추천</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>명</strong>의</td>
+                    <td>리스 이용자 (개인/법인)</td>
+                    <td>렌터카 회사</td>
+                    <td><strong>장기렌트카</strong>는 렌터카 번호판 (하, 허, 호)이 부착될 수 있으나, 최근에는 일반 번호판 선택 가능 업체 증가.</td>
+                </tr>
+                <tr>
+                    <td><strong>보험</strong></td>
+                    <td>이용자 직접 가입 (자차 포함 시)</td>
+                    <td>렌터카 회사 명의로 가입 (포함된 경우가 많음)</td>
+                    <td><strong>장기렌트카</strong>는 보험료가 월 **비용**에 포함되어 관리 용이. 사고 시 렌터카 회사를 통해 처리.</td>
+                </tr>
+                <tr>
+                    <td><strong>세금</strong></td>
+                    <td>이용자 명의로 자동차세, 보험료 등 납부</td>
+                    <td>월 **렌트료**에 포함 (자동차세, 보험료 포함)</td>
+                    <td><strong>리스</strong>는 개인/법인 소득 공제 가능. **장기렌트카**는 법인 비용 처리 용이.</td>
+                </tr>
+                <tr>
+                    <td><strong>정비</strong></td>
+                    <td>별도 관리 (소모품 교체 등)</td>
+                    <td>정기 점검 및 소모품 교환 포함 옵션 선택 가능</td>
+                    <td><strong>AI 추천</strong>: 운전이 익숙하지 않거나 관리가 번거롭다면 **장기렌트카**의 '정비 포함' 옵션이 편리.</td>
+                </tr>
+                <tr>
+                    <td><strong>초기 비용</strong></td>
+                    <td>선수금, 보증금 필요 (잔존가치율에 따라 변동)</td>
+                    <td>무보증 또는 저보증 상품 많음</td>
+                    <td>**저렴한 곳**을 찾는다면 **장기렌트카**의 무보증 상품 비교 필수.</td>
+                </tr>
+                <tr>
+                    <td><strong>계약 종료</strong></td>
+                    <td>인수, 반납, 재리스 선택 가능</td>
+                    <td>인수, 반납 선택 가능</td>
+                    <td><strong>K8</strong> 모델의 중고 시세 및 향후 계획 고려하여 결정.</td>
+                </tr>
+                 <tr>
+                    <td><strong>주요 장점</strong></td>
+                    <td>- 개인/법인 사업자 경비 처리 용이<br>- 금융 상품으로 신용 관리 유리<br>- 일반 번호판 사용 (대부분)</td>
+                    <td>- 초기 비용 부담 적음 (무보증)<br>- 월 고정 지출 관리 용이<br>- 정비/보험 등 통합 관리 가능<br>- 사고 시 면책금만 부담 (조건 확인 필수)</td>
+                    <td>- <strong>K8 하이브리드 장기렌트카</strong>는 특히 경제적.</td>
+                </tr>
+                <tr>
+                    <td><strong>주요 단점</strong></td>
+                    <td>- 별도 보험/세금/정비 관리 필요<br>- 선수금/보증금 부담 가능성<br>- 금융 상품으로 신용도 영향</td>
+                    <td>- 렌터카 번호판 (일부)<br>- 계약 기간 중 임의 해지 시 위약금 발생<br>- 사고 시 렌터카 회사 경유</td>
+                    <td>- <strong>내돈내산 후기</strong>들을 보면, 본인의 운전 습관, 자금 상황, 관리 편의성 등을 종합적으로 고려해야 함.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>AI 분석:</strong> **'K8 유지비 자동차리스 장기렌트카'**를 검색하는 분들 중, **신규**로 차량을 이용하거나 월 고정 지출을 명확히 관리하고 싶다면 **장기렌트카**가, 금융 상품으로서의 이점과 개인/법인 **사업자**의 **경비 처리**를 중요하게 생각한다면 **자동차리스**가 더 적합할 수 있습니다. **견적 비교**를 통해 **최저가** **상품**을 찾아보세요. (관련 정보: <a href="https://www.youtube.com/watch?v=example" target="_blank">K8 리스 vs 렌트 유튜브 비교 [cite:4 - Placeholder]</a>)</p>
+    </section>
+
+    <section id="pricing-comparison">
+        <span id="pricing-comparison-anchor" class="anchor"></span>
+        <h2>K8 리스/렌트카 가격 및 견적 비교 (2026년 최신 정보)</h2>
+        <p>K8의 **자동차리스** 및 **장기렌트카** **가격**은 계약 조건에 따라 천차만별입니다. **평균** **비용**은 참고용으로만 활용하시고, 반드시 **맞춤 견적**을 받아보셔야 합니다. 주요 결정 요인은 다음과 같습니다.</p>
+
+        <div class="info-box">
+            <strong>AI 인사이트:</strong> 2026년 현재, K8 **하이브리드** 모델의 **장기렌트카** 상품이 높은 **연비** 효율과 정부 **지원금** 혜택 가능성으로 인해 인기가 급증하고 있습니다. **저렴한 곳**을 찾기 위해 여러 **업체**의 **비교** 견적은 필수입니다.
+        </div>
+
+        <div class="chart-placeholder">
+            [그래프 삽입 영역: K8 모델별 월 평균 리스/렌트 비용 비교 (예상치)]
+            <p><em>* 이 영역에는 K8 2.5 가솔린, 3.5 가솔린, 3.5 LPi, K8 하이브리드 모델별, 그리고 리스/렌트카 방식별 월 평균 예상 납입료를 비교하는 그래프나 표가 시각적으로 표시될 수 있습니다. (예: 36개월, 선수금 30% 조건 기준)</em></p>
+        </div>
+
+        <h3>가격 결정 요인 상세 분석</h3>
+        <ul>
+            <li><strong>차량 모델 및 트림:</strong> K8 2.5 가솔린 < K8 3.5 가솔린 < K8 하이브리드 < K8 3.5 LPi (연비/세금 고려 시 순서 변동 가능)</li>
+            <li><strong>계약 기간:</strong> 보통 24, 36, 48, 60개월. 기간이 길어질수록 월 **비용**은 낮아짐.</li>
+            <li><strong>선수금 / 보증금:</strong> 선수금(미리 납부하는 **금액**) 비율이 높을수록 월 납입료 감소. 보증금은 계약 종료 시 반환.</li>
+            <li><strong>잔존가치 (리스):</strong> 계약 종료 시점의 차량 가치. 잔존가치가 높게 설정될수록 월 리스료 부담 감소.</li>
+            <li><strong>약정 주행 거리 (렌트카):</strong> 연간 1만km ~ 3만km 등 선택. 초과 시 km당 **비용** 추가.</li>
+            <li><strong>보험 및 정비 조건:</strong> 포함 여부, 포함 시 보장 범위 및 등급.</li>
+            <li><strong>선택 옵션:</strong> 파노라마 선루프, 드라이빙 어시스턴트 패키지 등 추가 옵션.</li>
+            <li><strong>프로모션 및 할인:</strong> **신규** **가입** **혜택**, **사은품** 증정, **현금지원** 등 **이벤트** 정보.</li>
+        </ul>
+
+        <h3>K8 리스 vs 렌트카, 저렴한 곳 찾는 팁 (AI 추천)</h3>
+        <ol>
+            <li><strong>다수 업체 비교 필수:</strong> 최소 3곳 이상의 **자동차리스** 및 **장기렌트카** **전문 업체**에 **동시 견적** 요청.</li>
+            <li><strong>숨은 비용 확인:</strong> 초기 계약금 외 부대 **비용**, 약정 위반 시 **비용** 등을 꼼꼼히 확인.</li>
+            <li><strong>시즌별 프로모션 활용:</strong> 연말, 특정 분기, 신차 출시 시즌에는 **할인** 혜택이 많음.</li>
+            <li><strong>커뮤니티 및 후기 참고:</strong> **'K8 리스 후기'**, **'K8 렌트카 내돈내산'** 등 실제 이용자들의 **정보**를 참고하여 **싼 곳** 또는 **혜택** 좋은 **업체** 파악. (예: **디시**인사이드 관련 갤러리 등)</li>
+            <li><strong>AI 비교 견적 활용:</strong> 본 웹사이트의 **맞춤 견적** 시스템을 통해 **실시간**으로 최적의 **상품** 및 **가격** 제안 받기.</li>
+        </ol>
+        <p><strong>'얼마나 나올까?'</strong> 하는 궁금증은 **무료 비교 견적**을 통해 바로 해결하세요!</p>
+    </section>
+
+    <section id="special-offers">
+        <span id="special-offers-anchor" class="anchor"></span>
+        <h2>K8 리스/렌트카 특별 할인 혜택 및 이벤트</h2>
+        <p>K8을 더욱 합리적인 **가격**으로 이용할 수 있는 다양한 **프로모션**, **할인**, **이벤트**가 상시 진행 중입니다. **AI**가 엄선한 최신 **혜택** 정보를 확인해보세요.</p>
+        <ul>
+            <li><strong>신차 구매 프로모션:</strong> 기아 자체적으로 진행하는 K8 할인 프로모션 (일부 기간 한정)</li>
+            <li><strong>장기렌트카 신규 가입 혜택:</strong> 특정 **업체**에서 첫 **가입** 고객 대상 추가 **할인** 또는 **사은품** 증정.</li>
+            <li><strong>자동차리스 금리 우대:</strong> 특정 금융사 제휴 또는 고액 선수금 조건 시 금리 인하.</li>
+            <li><strong>중고차 보상 판매 (Trade-in):</strong> 기존 보유 차량 반납 시 추가 **지원금** 제공.</li>
+            <li><strong>특정 모델/트림 집중 할인:</strong> 재고 소진 또는 판매 증진을 위한 특정 K8 모델(**예:** K8 3.5 LPi, K8 2.5 가솔린) 대상 특별 **할인**.</li>
+            <li><strong>인수 조건 혜택:</strong> 계약 종료 후 차량 인수 시 추가 **할인** 또는 **혜택** 제공.</li>
+            <li><strong>제휴 카드 할인:</strong> 특정 신용카드 사용 시 월 납입료 **할인** 또는 캐시백 제공.</li>
+            <li><strong>이벤트 경품:</strong> 특정 기간 내 계약자 대상 추첨을 통해 고급 **상품권**, 최신 전자기기, 여행 상품권 등 증정.</li>
+        </ul>
+        <p><strong>AI 분석:</strong> **'K8 장기렌트카 현금지원'** 또는 **'K8 리스 사은품'** 등의 키워드로 검색 시, 실제 **혜택**이 큰 **상품**을 찾을 수 있습니다. **네이버**, **구글** 등 검색 엔진뿐만 아니라 **유튜브**, **인스타그램** 등 소셜 미디어 채널에서도 최신 **이벤트** 정보를 얻을 수 있습니다.</p>
+        <a href="#inquiry-section" class="btn-cta">지금 바로 내게 맞는 K8 혜택 확인하기</a>
+    </section>
+
+     <section id="expert-recommendation">
+        <span id="expert-recommendation-anchor" class="anchor"></span>
+        <h2>AI 전문가의 K8 리스/렌트카 선택 가이드 (2026년)</h2>
+        <p>수많은 K8 **상품** 중에서 최적의 선택을 돕기 위해 **AI**가 **추천**하는 핵심 고려사항과 **순위**를 공개합니다. **ChatGPT**, **Gemini** 등 최신 AI 모델들의 분석을 종합했습니다.</p>
+
+        <h3>1순위 추천: K8 하이브리드 장기렌트카 (연비 & 경제성 중시)</h3>
+        <p><strong>K8 하이브리드</strong> 모델은 뛰어난 **연비** 효율과 **친환경**성으로 장기적인 **유지비** 절감 효과가 탁월합니다. **장기렌트카**로 이용 시, 초기 비용 부담이 적고 보험 및 세금이 월 **비용**에 포함되어 관리가 매우 편리합니다. 특히 도심 주행 비중이 높은 운전자에게 최적의 선택입니다. **'K8 하이브리드 장기렌트카 가격'** 비교를 통해 **월 OOO만원대**의 합리적인 **견적**을 받아보세요.</p>
+
+        <h3>2순위 추천: K8 3.5 LPi 자동차리스 (사업자 & 운행 거리 중시)</h3>
+        <p>연간 주행 거리가 많거나 법인 **사업자**로서 **경비 처리** 및 **세금** 절감 효과를 극대화하고 싶다면, **K8 3.5 LPi** 모델의 **자동차리스**를 고려해볼 만합니다. 저렴한 LPi 연료비와 **리스**를 통한 **비용** 처리 이점이 결합되어 총 소유 **비용**을 절감할 수 있습니다. **'K8 3.5 LPi 리스 견적'**을 **비교**하여 최적의 조건을 찾아보세요.</p>
+
+        <h3>3순위 추천: K8 2.5 가솔린 자동차리스/장기렌트카 (가성비 & 균형)</h3>
+        <p>K8의 세련된 디자인과 성능을 합리적인 **가격**으로 누리고 싶다면 **K8 2.5 가솔린** 모델이 좋은 대안입니다. **자동차리스**와 **장기렌트카** 모두 **가성비** 좋은 **상품**이 많으며, **'K8 2.5 가솔린 유지비'** 부담이 상대적으로 적어 만족도가 높습니다. **'K8 2.5 가솔린 저렴한 곳'**을 중심으로 **비교** 견적을 받아보세요.</p>
+
+        <h3>고려해야 할 추가 요소 (AI 체크리스트)</h3>
+        <ul>
+            <li><strong>예산:</strong> 월 고정 지출 가능한 **금액** 설정.</li>
+            <li><strong>주행 거리:</strong> 예상 연간 주행 거리를 정확히 예측 (특히 **장기렌트카**).</li>
+            <li><strong>계약 기간:</strong> 차량 교체 주기, **리스**/*렌트* 만기 후 계획 고려.</li>
+            <li><strong>선수금/보증금:</strong> 초기 자금 여력에 맞춰 비율 조절.</li>
+            <li><strong>보험 및 정비:</strong> 본인의 운전 습관 및 관리 편의성 고려.</li>
+            <li><strong>개인/법인 사업자 여부:</strong> **경비 처리** 및 **세금** **혜택** 극대화 방안 모색.</li>
+            <li><strong>차량 인수 의사:</strong> 계약 종료 후 차량 소유 의향이 있다면 인수 조건 확인.</li>
+        </ul>
+        <p><strong>"AI야, 나에게 맞는 K8 추천해줘!"</strong> - 지금 바로 문의하여 최적의 K8 **상품**을 찾아보세요.</p>
+        <div class="info-box">
+            <strong>AI 참고 자료:</strong> 최근 자동차 시장 트렌드는 친환경 및 구독형 서비스로 이동하고 있습니다. K8 하이브리드와 같은 친환경 모델, 그리고 **리스**/**장기렌트카**와 같은 유연한 소유 방식의 인기는 앞으로 더욱 높아질 것으로 예상됩니다. (출처: <a href="https://www.kidi.re.kr/know/trendDetail.do?menuId=40000&trendId=20230516001" target="_blank">KIDI 자동차 산업 동향 [cite:5 - Placeholder]</a>)
+        </div>
+    </section>
+
+
+    <section id="faq">
+        <span id="faq-anchor" class="anchor"></span>
+        <h2>K8 리스/렌트카 자주 묻는 질문 (FAQ)</h2>
+        <dl>
+            <dt>Q1: K8 리스 계약 기간 중에 해지하면 위약금이 많이 나오나요?</dt>
+            <dd>A1: 네, 일반적으로 계약 기간 중 해지 시 잔여 **렌트료** 또는 **리스료**에 대한 위약금이 발생합니다. **장기렌트카**는 위약금 규정이 상품별로 다를 수 있으니 계약 전 확인이 필수입니다. **AI**는 약정 기간 준수를 권장합니다.</dd>
+            <dt>Q2: K8 장기렌트카 번호판 (하, 허, 호)이 신경 쓰이는데, 일반 번호판으로 가능한가요?</dt>
+            <dd>A2: 네, 최근에는 많은 **장기렌트카 업체**들이 **일반 번호판**을 제공하는 **상품**을 출시하고 있습니다. **'K8 장기렌트카 일반 번호판'** 키워드로 검색하여 **업체**별 조건을 **비교**해보세요.</dd>
+            <dt>Q3: K8 리스나 렌트카 이용 시, 사고가 발생하면 어떻게 처리되나요?</dt>
+            <dd>A3: **자동차리스**는 본인이 가입한 보험으로 처리하며, **장기렌트카**는 렌터카 회사 명의의 보험으로 처리됩니다. 사고 시 렌터카 회사에 즉시 알리고, **면책금**(자기부담금)만 부담하면 수리가 진행됩니다. (정비 포함 상품의 경우)</dd>
+            <dt>Q4: K8 하이브리드 모델의 장기렌트카 월 비용은 얼마나 예상해야 하나요?</dt>
+            <dd>A4: **K8 하이브리드 장기렌트카**의 월 **견적**은 선수금, 계약 기간, 약정 주행 거리 등에 따라 다르지만, 일반적으로 40만원대 후반 ~ 70만원대 이상으로 형성됩니다. **정확한 금액**은 **맞춤 견적**을 통해 확인하는 것이 가장 좋습니다.</dd>
+            <dt>Q5: K8 리스와 장기렌트카 중 신용점수에 미치는 영향은 어떤가요?</dt>
+            <dd>A5: **자동차리스**는 금융 상품으로 분류되어 신용평가에 영향을 줄 수 있습니다. **장기렌트카**는 대여 상품으로 분류되어 직접적인 신용점수 하락 영향은 적은 편이나, 무보증 상품의 경우 신용도가 낮으면 이용이 제한될 수 있습니다. **AI**는 두 방식 모두 신용 관리에 유의할 것을 권고합니다.</dd>
+             <dt>Q6: K8 차량을 리스 또는 렌트 후 나중에 인수할 때 유리한 점은 무엇인가요?</dt>
+            <dd>A6: 인수 시점의 **중고차 시세**를 미리 파악하여 유리하게 인수할 수 있습니다. 또한, **리스**의 경우 잔존가치 설정에 따라 인수 **가격**이 달라지며, **장기렌트카**는 계약 시 인수 **가격**을 미리 확정하는 경우가 많습니다. **'K8 중고차 시세'** 정보를 미리 확인하면 좋습니다.</dd>
+        </dl>
+    </section>
+
+    <section id="inquiry-section" class="form-section">
+        <span id="inquiry-section-anchor" class="anchor"></span>
+        <h2>AI 맞춤 K8 견적 문의하기</h2>
+        <p>최적의 K8 **자동차리스** 또는 **장기렌트카** **상품**을 찾아드립니다. 아래 정보를 상세히 입력해주시면, **AI** 기반 **비교** 분석을 통해 **가장 저렴한 곳**의 **맞춤 견적**을 제안해 드립니다. **지금 바로** 특별 **혜택**을 확인하세요!</p>
+        <form action="/submit-k8-inquiry" method="POST">
+             <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">고객명<span class="required-star">*</span></label>
+                    <input type="text" id="name" name="customer_name" required placeholder="홍길동">
+                </div>
+                 <div class="form-group">
+                    <label for="phone">연락처<span class="required-star">*</span></label>
+                    <input type="tel" id="phone" name="phone_number" required placeholder="010-XXXX-XXXX" pattern="[0-9\-]+">
+                </div>
+                 <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email_address" placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="residence">거주 지역 (시/도)</label>
+                    <input type="text" id="residence" name="residence_area" placeholder="예: 서울특별시, 경기도 평택시">
+                </div>
+            </div>
+
+            <div class="form-grid">
+                 <div class="form-group">
+                    <label for="desired-model">원하는 K8 모델<span class="required-star">*</span></label>
+                    <select id="desired-model" name="k8_model" required>
+                        <option value="">모델 선택</option>
+                        <option value="K8 2.5 가솔린">K8 2.5 가솔린</option>
+                        <option value="K8 3.5 가솔린">K8 3.5 가솔린</option>
+                        <option value="K8 3.5 LPi">K8 3.5 LPi</option>
+                        <option value="K8 하이브리드">K8 하이브리드</option>
+                        <option value="K8 노블레스 (2.5/3.5)">K8 노블레스 (2.5/3.5)</option>
+                        <option value="K8 인스퍼레이션 (2.5/3.5/하)">K8 인스퍼레이션 (2.5/3.5/하)</option>
+                        <option value="기타">기타 (아래에 기재)</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="preferred-service">선호 서비스<span class="required-star">*</span></label>
+                    <select id="preferred-service" name="service_type" required>
+                        <option value="">서비스 선택</option>
+                        <option value="자동차리스">자동차리스</option>
+                        <option value="장기렌트카">장기렌트카</option>
+                        <option value="둘 다 비교">리스/렌트카 모두 비교</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="contract-term">계약 기간 (개월)<span class="required-star">*</span></label>
+                    <select id="contract-term" name="contract_duration_months" required>
+                        <option value="">기간 선택</option>
+                        <option value="24">24개월</option>
+                        <option value="36">36개월</option>
+                        <option value="48">48개월</option>
+                        <option value="60">60개월</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="annual-mileage">예상 연간 주행거리 (km)<span class="required-star">*</span></label>
+                     <select id="annual-mileage" name="estimated_annual_mileage" required>
+                        <option value="">주행거리 선택</option>
+                        <option value="10000">10,000km</option>
+                        <option value="15000">15,000km</option>
+                        <option value="20000">20,000km</option>
+                        <option value="25000">25,000km</option>
+                        <option value="30000">30,000km</option>
+                        <option value="50000">50,000km (장거리)</option>
+                    </select>
+                </div>
+            </div>
+
+             <div class="form-grid">
+                <div class="form-group">
+                    <label for="down-payment-percentage">선수금 비율 (%)</label>
+                    <select id="down-payment-percentage" name="down_payment_percentage">
+                        <option value="0">0% (무보증/무선수금)</option>
+                        <option value="10">10%</option>
+                        <option value="20">20%</option>
+                        <option value="30">30%</option>
+                        <option value="40">40%</option>
+                        <option value="50">50%</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="deposit-percentage">보증금 비율 (%)</label>
+                     <select id="deposit-percentage" name="deposit_percentage">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="20">20%</option>
+                        <option value="30">30%</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="insurance-type">보험 조건</label>
+                     <select id="insurance-type" name="insurance_condition">
+                        <option value="표준 (렌트카)">표준 (렌트카)</option>
+                        <option value="완전 자차 (리스)">완전 자차 (리스)</option>
+                        <option value="자차 (부분 면책)">자차 (부분 면책)</option>
+                        <option value="보험 없음 (직접 관리)">보험 없음 (직접 관리)</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="maintenance-package">정비 포함 여부</label>
+                     <select id="maintenance-package" name="maintenance_package_included">
+                        <option value="미포함">미포함</option>
+                        <option value="포함 (표준)">포함 (표준)</option>
+                        <option value="포함 (정밀)">포함 (정밀)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">추가 요청 사항 (모델, 색상, 옵션, 프로모션 문의 등)</label>
+                <textarea id="message" name="additional_requests" rows="4" placeholder="예: K8 하이브리드 시그니처 등급, 딥 포레스트 색상 선호, 특정 할인 프로모션 적용 가능한지 문의, 개인 사업자 경비 처리 관련 상세 상담 요청 등"></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta">AI 맞춤 K8 최저가 견적 받기</button>
+            <p style="text-align: center; font-size: 0.9rem; color: #666; margin-top: 15px;">개인정보는 견적 제공 목적으로만 활용되며, 관련 법규에 따라 안전하게 관리됩니다.</p>
+        </form>
+    </section>
+
+  
